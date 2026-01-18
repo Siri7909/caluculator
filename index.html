@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SGPA & CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>SGPA Calculator</h2>
+
+    <label>Subject 1 Grade Point:</label>
+    <input type="number" id="g1">
+    <label>Credits:</label>
+    <input type="number" id="c1">
+
+    <label>Subject 2 Grade Point:</label>
+    <input type="number" id="g2">
+    <label>Credits:</label>
+    <input type="number" id="c2">
+
+    <label>Subject 3 Grade Point:</label>
+    <input type="number" id="g3">
+    <label>Credits:</label>
+    <input type="number" id="c3">
+
+    <button onclick="calculateSGPA()">Calculate SGPA</button>
+
+    <p id="sgpaResult"></p>
+
+    <hr>
+
+    <h2>CGPA Calculator</h2>
+    <label>Enter SGPA of Semesters (comma separated):</label>
+    <input type="text" id="sgpas">
+
+    <button onclick="calculateCGPA()">Calculate CGPA</button>
+
+    <p id="cgpaResult"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
